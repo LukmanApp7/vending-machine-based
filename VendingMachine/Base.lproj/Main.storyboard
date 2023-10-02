@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VendingMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crk-2u-7ZW">
+                                <rect key="frame" x="25" y="109" width="200" height="44"/>
+                                <color key="backgroundColor" red="0.83660596610000004" green="0.92042285199999996" blue="0.99980741740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nCt-MS-fZi"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Nama item"/>
+                                <connections>
+                                    <action selector="itemSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4M-MX-fWK"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bjK-8h-Dzv">
+                                <rect key="frame" x="232" y="114" width="41" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="gwC-Au-Vak"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6E-8i-6Q2">
+                                <rect key="frame" x="280" y="114" width="88" height="34"/>
+                                <color key="backgroundColor" red="0.92063891890000005" green="0.95262128109999999" blue="0.97777193780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="1M5-u8-Lam"/>
+                                    <constraint firstAttribute="width" constant="88" id="I8L-pY-Bhs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Re-stock"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YlG-S3-VfE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZG1-TH-VHA">
+                                <rect key="frame" x="25" y="169" width="200" height="44"/>
+                                <color key="backgroundColor" red="0.83660596610000004" green="0.92042285199999996" blue="0.99980741740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PbD-bw-OKZ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Nama item"/>
+                                <connections>
+                                    <action selector="itemSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSx-7o-0xP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OjL-B6-iry">
+                                <rect key="frame" x="232" y="174" width="41" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="Wj7-hp-ZXR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvK-mZ-OzN">
+                                <rect key="frame" x="280" y="174" width="88" height="34"/>
+                                <color key="backgroundColor" red="0.92063891890000005" green="0.95262128109999999" blue="0.97777193780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="jie-UE-xT6"/>
+                                    <constraint firstAttribute="height" constant="34" id="p36-fF-nsN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Re-stock"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fbn-os-i9F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJP-Lb-pxQ">
+                                <rect key="frame" x="25" y="229" width="200" height="44"/>
+                                <color key="backgroundColor" red="0.83660596610000004" green="0.92042285199999996" blue="0.99980741740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GjE-pQ-QBG"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Nama item"/>
+                                <connections>
+                                    <action selector="itemSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ncs-S3-GtB"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKn-q5-JfU">
+                                <rect key="frame" x="232" y="234" width="41" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="rMK-zy-HS9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idu-1E-gpy">
+                                <rect key="frame" x="280" y="234" width="88" height="34"/>
+                                <color key="backgroundColor" red="0.92063891890000005" green="0.95262128109999999" blue="0.97777193780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="6O3-41-GCa"/>
+                                    <constraint firstAttribute="width" constant="88" id="zaH-Q0-ctq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Re-stock"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Wd-4I-Aem"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIq-tB-rqC">
+                                <rect key="frame" x="25" y="289" width="200" height="44"/>
+                                <color key="backgroundColor" red="0.83660596610000004" green="0.92042285199999996" blue="0.99980741740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9Wh-Ku-D46"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Nama item"/>
+                                <connections>
+                                    <action selector="itemSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wC-Jo-Ytw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y2h-gs-dGB">
+                                <rect key="frame" x="232" y="294" width="41" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="AoD-S3-YYL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hf-ZW-wGO">
+                                <rect key="frame" x="280" y="294" width="88" height="34"/>
+                                <color key="backgroundColor" red="0.92063891890000005" green="0.95262128109999999" blue="0.97777193780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="HAk-v7-aYg"/>
+                                    <constraint firstAttribute="height" constant="34" id="uwP-f2-KMW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Re-stock"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mTE-nY-OTE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGg-7M-68z">
+                                <rect key="frame" x="25" y="349" width="200" height="44"/>
+                                <color key="backgroundColor" red="0.83660596610000004" green="0.92042285199999996" blue="0.99980741740000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LRa-zf-4nn"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Nama item"/>
+                                <connections>
+                                    <action selector="itemSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r5V-X1-aym"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJB-jU-3bN">
+                                <rect key="frame" x="25" y="417" width="88" height="34"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="SR7-m5-SfB"/>
+                                    <constraint firstAttribute="width" constant="88" id="mhC-sq-5tp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Beli">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="itemPurchase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXg-un-IDk"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3np-4X-Hcj">
+                                <rect key="frame" x="232" y="354" width="41" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="HNA-2Y-LJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfb-a1-rwJ">
+                                <rect key="frame" x="280" y="354" width="88" height="34"/>
+                                <color key="backgroundColor" red="0.92063891890000005" green="0.95262128109999999" blue="0.97777193780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="U55-R2-YnX"/>
+                                    <constraint firstAttribute="height" constant="34" id="h88-Vd-kfl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Re-stock"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ttc-jn-jyb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bayar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36b-ax-wIu">
+                                <rect key="frame" x="221" y="475" width="39" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPR-vd-OFW">
+                                <rect key="frame" x="280" y="467" width="88" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="xLZ-Rb-DoC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7L-DA-yOE">
+                                <rect key="frame" x="280" y="517" width="88" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="rrf-4h-Q5z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kembali" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9p-hq-0Qh">
+                                <rect key="frame" x="205" y="525" width="55" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OPR-vd-OFW" firstAttribute="top" secondItem="iJB-jU-3bN" secondAttribute="bottom" constant="16" id="0Aj-9c-UmB"/>
+                            <constraint firstItem="p7L-DA-yOE" firstAttribute="top" secondItem="OPR-vd-OFW" secondAttribute="bottom" constant="16" id="38n-bt-5AQ"/>
+                            <constraint firstItem="bjK-8h-Dzv" firstAttribute="centerY" secondItem="crk-2u-7ZW" secondAttribute="centerY" id="7fU-6Y-Dgg"/>
+                            <constraint firstItem="crk-2u-7ZW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="8rb-BZ-ajv"/>
+                            <constraint firstItem="7Hf-ZW-wGO" firstAttribute="leading" secondItem="y2h-gs-dGB" secondAttribute="trailing" constant="7" id="9o9-uM-dxH"/>
+                            <constraint firstItem="Vfb-a1-rwJ" firstAttribute="centerY" secondItem="bGg-7M-68z" secondAttribute="centerY" id="CvL-dR-LrW"/>
+                            <constraint firstItem="RIq-tB-rqC" firstAttribute="top" secondItem="QJP-Lb-pxQ" secondAttribute="bottom" constant="16" id="DFr-Ub-kxj"/>
+                            <constraint firstItem="lKn-q5-JfU" firstAttribute="leading" secondItem="QJP-Lb-pxQ" secondAttribute="trailing" constant="7" id="DRq-oO-NPW"/>
+                            <constraint firstItem="crk-2u-7ZW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="E5P-z0-KWh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cvK-mZ-OzN" secondAttribute="trailing" constant="25" id="EOm-0H-n0g"/>
+                            <constraint firstItem="Vfb-a1-rwJ" firstAttribute="leading" secondItem="3np-4X-Hcj" secondAttribute="trailing" constant="7" id="Ffs-Ud-j30"/>
+                            <constraint firstItem="y2h-gs-dGB" firstAttribute="leading" secondItem="RIq-tB-rqC" secondAttribute="trailing" constant="7" id="GaT-Em-GUB"/>
+                            <constraint firstItem="x9p-hq-0Qh" firstAttribute="centerY" secondItem="p7L-DA-yOE" secondAttribute="centerY" id="J8T-Ll-Fgt"/>
+                            <constraint firstItem="OjL-B6-iry" firstAttribute="leading" secondItem="ZG1-TH-VHA" secondAttribute="trailing" constant="7" id="JnL-ua-ruy"/>
+                            <constraint firstItem="d6E-8i-6Q2" firstAttribute="centerY" secondItem="crk-2u-7ZW" secondAttribute="centerY" id="LYe-a1-MeJ"/>
+                            <constraint firstItem="OPR-vd-OFW" firstAttribute="leading" secondItem="36b-ax-wIu" secondAttribute="trailing" constant="20" id="NZG-2K-ab3"/>
+                            <constraint firstItem="QJP-Lb-pxQ" firstAttribute="top" secondItem="ZG1-TH-VHA" secondAttribute="bottom" constant="16" id="Oz9-Pm-DW1"/>
+                            <constraint firstItem="ZG1-TH-VHA" firstAttribute="top" secondItem="crk-2u-7ZW" secondAttribute="bottom" constant="16" id="PeW-XD-gFT"/>
+                            <constraint firstItem="bjK-8h-Dzv" firstAttribute="leading" secondItem="crk-2u-7ZW" secondAttribute="trailing" constant="7" id="Ueg-hY-jih"/>
+                            <constraint firstItem="Idu-1E-gpy" firstAttribute="centerY" secondItem="QJP-Lb-pxQ" secondAttribute="centerY" id="Uic-GU-Ik2"/>
+                            <constraint firstItem="3np-4X-Hcj" firstAttribute="leading" secondItem="bGg-7M-68z" secondAttribute="trailing" constant="7" id="VcB-iW-qpB"/>
+                            <constraint firstItem="d6E-8i-6Q2" firstAttribute="leading" secondItem="bjK-8h-Dzv" secondAttribute="trailing" constant="7" id="Xra-ac-W20"/>
+                            <constraint firstItem="lKn-q5-JfU" firstAttribute="centerY" secondItem="QJP-Lb-pxQ" secondAttribute="centerY" id="YwF-Cn-UKD"/>
+                            <constraint firstItem="iJB-jU-3bN" firstAttribute="top" secondItem="bGg-7M-68z" secondAttribute="bottom" constant="24" id="ZgH-LU-cHm"/>
+                            <constraint firstItem="3np-4X-Hcj" firstAttribute="centerY" secondItem="bGg-7M-68z" secondAttribute="centerY" id="ZuB-Nx-dPo"/>
+                            <constraint firstItem="cvK-mZ-OzN" firstAttribute="centerY" secondItem="ZG1-TH-VHA" secondAttribute="centerY" id="axM-VX-f4Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p7L-DA-yOE" secondAttribute="trailing" constant="25" id="bL4-tj-FEv"/>
+                            <constraint firstItem="p7L-DA-yOE" firstAttribute="leading" secondItem="x9p-hq-0Qh" secondAttribute="trailing" constant="20" id="dSq-aD-Pyv"/>
+                            <constraint firstItem="bGg-7M-68z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="dcT-iT-Gru"/>
+                            <constraint firstItem="iJB-jU-3bN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="eJR-KL-ho2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Hf-ZW-wGO" secondAttribute="trailing" constant="25" id="fr4-u1-5kK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Idu-1E-gpy" secondAttribute="trailing" constant="25" id="hCx-FI-Xu2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d6E-8i-6Q2" secondAttribute="trailing" constant="25" id="iAQ-Pd-tWU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vfb-a1-rwJ" secondAttribute="trailing" constant="25" id="iYv-Tn-xR1"/>
+                            <constraint firstItem="cvK-mZ-OzN" firstAttribute="leading" secondItem="OjL-B6-iry" secondAttribute="trailing" constant="7" id="jlf-fk-Aas"/>
+                            <constraint firstItem="y2h-gs-dGB" firstAttribute="centerY" secondItem="RIq-tB-rqC" secondAttribute="centerY" id="lFt-w0-p98"/>
+                            <constraint firstItem="7Hf-ZW-wGO" firstAttribute="centerY" secondItem="RIq-tB-rqC" secondAttribute="centerY" id="lup-h1-3OZ"/>
+                            <constraint firstItem="ZG1-TH-VHA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="mv5-Dl-N4m"/>
+                            <constraint firstItem="QJP-Lb-pxQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="oLn-iQ-jPR"/>
+                            <constraint firstItem="RIq-tB-rqC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="p3b-re-dam"/>
+                            <constraint firstItem="Idu-1E-gpy" firstAttribute="leading" secondItem="lKn-q5-JfU" secondAttribute="trailing" constant="7" id="p4d-hN-A8L"/>
+                            <constraint firstItem="36b-ax-wIu" firstAttribute="centerY" secondItem="OPR-vd-OFW" secondAttribute="centerY" id="u4d-WL-GEs"/>
+                            <constraint firstItem="bGg-7M-68z" firstAttribute="top" secondItem="RIq-tB-rqC" secondAttribute="bottom" constant="16" id="vfZ-WJ-LHf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OPR-vd-OFW" secondAttribute="trailing" constant="25" id="wLM-FM-JU3"/>
+                            <constraint firstItem="OjL-B6-iry" firstAttribute="centerY" secondItem="ZG1-TH-VHA" secondAttribute="centerY" id="zDh-bD-U06"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonBeli" destination="iJB-jU-3bN" id="bA8-H7-qFu"/>
+                        <outlet property="item1" destination="crk-2u-7ZW" id="wm5-h2-nfJ"/>
+                        <outlet property="item2" destination="ZG1-TH-VHA" id="vob-Pg-13b"/>
+                        <outlet property="item3" destination="QJP-Lb-pxQ" id="YIZ-3W-Z2Y"/>
+                        <outlet property="item4" destination="RIq-tB-rqC" id="U5e-2N-XfD"/>
+                        <outlet property="item5" destination="bGg-7M-68z" id="h3H-hV-IYd"/>
+                        <outlet property="stokItem1" destination="bjK-8h-Dzv" id="Q43-ld-1sQ"/>
+                        <outlet property="stokItem2" destination="OjL-B6-iry" id="Sau-CP-Tsq"/>
+                        <outlet property="stokItem3" destination="lKn-q5-JfU" id="abQ-JU-HyV"/>
+                        <outlet property="stokItem4" destination="y2h-gs-dGB" id="bE7-pW-z4g"/>
+                        <outlet property="stokItem5" destination="3np-4X-Hcj" id="Tkt-U6-YqV"/>
+                        <outlet property="textfieldBayar" destination="OPR-vd-OFW" id="a27-dN-iRA"/>
+                        <outlet property="textfieldKembali" destination="p7L-DA-yOE" id="AGA-vC-8Ih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.343511450381679" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
